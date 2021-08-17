@@ -11,7 +11,7 @@ function translateString() {
 
 	console.log(query);
 	fetch(url)
-		.then((response) => response.json)
+		.then((response) => response.json())
 		.then((json) => (outputDiv.innerText = json.contents.translated))
 		.catch((error) => alert('Some error occurred'));
 }
